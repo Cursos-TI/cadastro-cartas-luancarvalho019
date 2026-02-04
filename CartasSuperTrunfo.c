@@ -4,8 +4,8 @@ int main(){
   char carta[50];
   char cidade[50];
   char estado[50];
-  double população;
-  double pontos;
+  float população;
+  float pontos;
   float area;
   float pib;
   
@@ -20,23 +20,21 @@ int main(){
  scanf("%s", estado);
 
  printf("Qual o tamanho da população?: \n");
- scanf("%f", &população);
+ scanf("%.2f", &população);
 
  printf("Quantos pontos turisticos?: \n");
- scanf("%f", &pontos);
+ scanf("%.2f", &pontos);
 
 
  printf("Codigo da carta: %s\n", carta);
  printf("Nome da cidade: %s\n", cidade);
  printf("Estado: %s\n", estado);
- printf("População: %f\n", população);
- printf("Pontos turisticos: %f\n", pontos);
+ printf("População: %.2f\n", população);
+ printf("Pontos turisticos: %.2f\n", pontos);
 
  return 0;
 
 /*
-char opcao;
-char nome[20];
 %d: Imprime um inteiro no formato decimal.
 %i: Equivalente a %d
 %f: Imprime um número de ponto flutuante no formato padrão.
